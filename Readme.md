@@ -1,4 +1,4 @@
-# ResNet Model with Hyperparameter Tuning
+# ResNet Model Optimization for Image Classification 
 
 This repository contains a Jupyter Notebook that trains a **ResNet model on the CIFAR-10 dataset** with hyperparameter tuning using **Weights & Biases (WandB)**. The CIFAR-10 dataset consists of 60,000 32x32 color images in 10 classes, with 6,000 images per class. The project focuses on optimizing training parameters through automated sweeps to achieve the best classification performance. By leveraging **PyTorch**, **WandB**, and **random search sweeps**, we fine-tune key hyperparameters such as learning rate, batch size, optimizer type, and weight decay to improve model accuracy and reduce training loss.
 
