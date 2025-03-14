@@ -48,16 +48,17 @@ sweep_id = wandb.sweep(sweep_config, project="a100-resnet-hyperparameter-tuning"
 Training logs, loss curves, and accuracy metrics can be visualized in **WandB**.
 
 ### Confusion Matrix
-![Confusion Matrix](WhatsApp%20Image%202025-03-14%20at%2015.09.26_6c2804ab.jpg)
+![Confusion Matrix](https://github.com/user-attachments/assets/429b6c42-217c-4415-aeaf-156398e691d8)
+
 
 ### Training Accuracy
-![Training Accuracy](WhatsApp%20Image%202025-03-13%20at%2017.33.05_fb425d9b.jpg)
+![Training Accuracy](https://github.com/user-attachments/assets/8c70988c-20f8-49ef-a128-0dd34becf7af)
 
 ### Training Loss
-![Training Loss](WhatsApp%20Image%202025-03-13%20at%2017.33.05_9fe862a2.jpg)
+![Training Loss](https://github.com/user-attachments/assets/026202b0-d556-486a-b678-c8d49ce9c37e)
 
 ### Hyperparameter Importance
-![Hyperparameter Importance](WhatsApp%20Image%202025-03-13%20at%2017.35.54_beea379c.jpg)
+![Hyperparameter Importance](https://github.com/user-attachments/assets/cedf485a-55c3-463e-bffd-25c2036f7c6c)
 
 ## License
 This project is licensed under the MIT License.
