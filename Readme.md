@@ -21,11 +21,7 @@ pip install torch torchvision wandb
    git clone https://github.com/your-username/resnet-hyperparameter-tuning.git
    cd resnet-hyperparameter-tuning
    ```
-2. Open the Jupyter Notebook:
-   ```bash
-   jupyter notebook "Reference Final Resnet Model.ipynb"
-   ```
-3. Run the notebook to:
+2. Run the notebook to:
    - Initialize the WandB sweep
    - Train the ResNet model with different hyperparameter configurations
    - Log experiment results to WandB
@@ -36,32 +32,31 @@ The model uses **random search** to optimize:
 - Batch Size (`32`, `64`, `128`)
 - Optimizer (`adam`, `adadelta`, `rmsprop`)
 - Weight Decay (`0.0`, `0.0001`, `0.001`)
-- Fixed Epochs (`50`)
+- Fixed Epochs (`300`)
 
 ### Running a Sweep
 Sweeps allow for automated hyperparameter tuning:
 ```python
-sweep_id = wandb.sweep(sweep_config, project="a100-resnet-hyperparameter-tuning")
+wandb.sweep(sweep_config, project="a100-resnet-hyperparameter-tuning")
 ```
 
 ## Results
-Training logs, loss curves, and accuracy metrics can be visualized in **WandB**.
+Accuracy metrics, loss curves, and hyperparameter relevance were visualized in **WandB**.
 
 ### Confusion Matrix
-![Confusion Matrix](https://github.com/user-attachments/assets/429b6c42-217c-4415-aeaf-156398e691d8)
-
+<img src="https://github.com/user-attachments/assets/429b6c42-217c-4415-aeaf-156398e691d8" width="600"/>
 
 ### Training Accuracy
-![Training Accuracy](https://github.com/user-attachments/assets/8c70988c-20f8-49ef-a128-0dd34becf7af)
+
+<img src="https://github.com/user-attachments/assets/8c70988c-20f8-49ef-a128-0dd34becf7af" width="600"/>
 
 ### Training Loss
-![Training Loss](https://github.com/user-attachments/assets/026202b0-d556-486a-b678-c8d49ce9c37e)
+
+<img src="https://github.com/user-attachments/assets/026202b0-d556-486a-b678-c8d49ce9c37e" width="600"/>
 
 ### Hyperparameter Importance
-![Hyperparameter Importance](https://github.com/user-attachments/assets/cedf485a-55c3-463e-bffd-25c2036f7c6c)
 
-## License
-This project is licensed under the MIT License.
+<img src="https://github.com/user-attachments/assets/cedf485a-55c3-463e-bffd-25c2036f7c6c" width="600"/>
 
 ---
 
